@@ -9,8 +9,8 @@
                 <div class="col-lg-6">
                     <div class="header__top__left">
                         <ul>
-                            <li><i class="fa fa-envelope"></i> phukienamthanh999@gmail.com</li>
-                            <li>Miễn phí ship cho tất cả đơn hàng từ 99.000đ</li>
+                            <li><i class="fa fa-envelope"></i> thuoctay97@gmail.com</li>
+                            <li>028 37605072</li>
                         </ul>
                     </div>
                 </div>
@@ -18,7 +18,7 @@
                     <div class="header__top__right">
                         <div class="header__top__right__social">
                             <a href="#"><i class="fa fa-facebook"></i></a>
-                            <a href="#"><i class="fa fa-twitter"></i></a>
+                            <a href="#"><i class="fa fa-youtube"></i></a>
                         </div>
                         <span>
                             <security:authorize access="hasAnyRole('EMPLOYEE','MANAGER', 'ADMIN')">
@@ -26,7 +26,7 @@
                                     span a{ display: none; }
                                 </style>
                             </security:authorize>
-                            <a style="float: right"href="${pageContext.request.contextPath}/showMyLoginPage">Đăng nhập</a>                              
+                            <a href="${pageContext.request.contextPath}/showMyLoginPage" class="btn-login" >Đăng nhập</a>                              
                         </span>
                         <security:authorize access="hasAnyRole('EMPLOYEE','MANAGER', 'ADMIN')">
                         <span> 
@@ -54,7 +54,8 @@
             <div class="col-lg-3">
                 <div class="header__logo">
                     <a href="<c:url value ='/trang-chu' />">
-                        <img src="<c:url value = '/resources/user/img/logo.png'/>" alt="">
+                        <img src="<c:url value = '/resources/user/img/logo97.png'/>" alt="" style="    width: 50%;
+    margin-left: 50px;" class="logo_img">
                     </a>
                 </div>
             </div>
@@ -123,3 +124,20 @@
         </div>
     </div>
 </header>
+<style>
+	.btn-login{
+	width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+        display: inline-block;
+		transition-duration: 0.4s;
+		background-color: white; 
+  color: black; 
+  border: 2px solid #1eb9c5;
+	}
+	.btn-login:hover{
+		 background-color: #1eb9c5; /* Green */
+  color: white;
+	}
+</style>
